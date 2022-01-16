@@ -1,0 +1,64 @@
+package labTest1;
+import java.util.Scanner;
+public class QUIZ1 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+		Scanner sc = new Scanner(System.in);
+
+		
+		double a,b,c,d;
+		double year=0;
+		double year1=0;
+		double year2=0;
+		double year3=0;
+		double bonus;
+		
+		
+		System.out.println("SALARY : RM ");
+		a=sc.nextDouble();
+		System.out.println("SERVICE WORK : "+year);
+	    year=sc.nextDouble();
+		
+		if(year>5) {
+			bonus=1.05*a;
+			System.out.println("Your bonus is : RM "+bonus);
+			
+		}else {
+			System.out.println("You dont get any bonus. SORRY ! ");
+		}
+		
+		
+		System.out.println("SALARY : RM ");
+		b=sc.nextDouble();
+		System.out.println("SERVICE WORK : "+year1);
+		year1=sc.nextDouble();
+		System.out.println("SALARY : RM ");
+		c=sc.nextDouble();
+		System.out.println("SERVICE WORK : "+year2);
+		year2=sc.nextDouble();
+		System.out.println("SALARY : RM ");
+		d=sc.nextDouble();
+		System.out.println("SERVICE WORK : "+year3);
+		year3=sc.nextDouble();
+		
+		
+		if(b>c&&b>d) {
+			System.out.println(b);
+		}
+		else if(c>b&&c>d){
+			System.out.println(c);
+		}else if(d>b&&d>c){
+			System.out.println(d);
+		}
+		if(year1>year2&&year1>year3) {
+			System.out.println(year1);
+		}
+		else if(year2>year1&&year2>year3){
+			System.out.println(year2);
+		}else if(year3>year1&&year3>year2){
+			System.out.println(year3);
+		}
+		}
+	}
